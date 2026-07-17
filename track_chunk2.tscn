@@ -1,0 +1,79 @@
+[gd_scene format=3 uid="uid://b2ems3ph8sj43"]
+
+[ext_resource type="Texture2D" uid="uid://dfdsumgexrbef" path="res://kenney_prototype-textures/PNG/Dark/texture_07.png" id="1_kap1y"]
+[ext_resource type="PackedScene" uid="uid://fvt56jtfb6i" path="res://box.tscn" id="2_woxqt"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ykoex"]
+albedo_texture = ExtResource("1_kap1y")
+uv1_triplanar = true
+
+[sub_resource type="BoxMesh" id="BoxMesh_jpf1b"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ykoex"]
+size = Vector3(20, 1, 60)
+
+[node name="TrackChunk" type="Node3D" unique_id=997381155]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1002286450]
+
+[node name="CSGBox3D" type="MeshInstance3D" parent="StaticBody3D" unique_id=1689466506]
+transform = Transform3D(20, 0, 0, 0, 1, 0, 0, 0, 60, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_ykoex")
+mesh = SubResource("BoxMesh_jpf1b")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=595297862]
+shape = SubResource("BoxShape3D_ykoex")
+
+[node name="RigidBody3D" parent="." unique_id=1058976817 instance=ExtResource("2_woxqt")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1.4520406, 1, 6.0500226)
+
+[node name="RigidBody3D2" parent="." unique_id=179455824 instance=ExtResource("2_woxqt")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.102292955, 1, 6.0628147)
+
+[node name="RigidBody3D3" parent="." unique_id=980809299 instance=ExtResource("2_woxqt")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -1.326115, 1, 6.0763526)
+
+[node name="RigidBody3D4" parent="." unique_id=432031454 instance=ExtResource("2_woxqt")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.5087346, 2.3294854, 6.071247)
+
+[node name="RigidBody3D5" parent="." unique_id=1117592277 instance=ExtResource("2_woxqt")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.5023184, 2.3294854, 6.0577946)
+
+[node name="RigidBody3D6" parent="." unique_id=123712633 instance=ExtResource("2_woxqt")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.072806664, 3.5920696, 6.064474)
+
+[node name="RigidBody3D7" parent="." unique_id=537737863 instance=ExtResource("2_woxqt")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 6.542571, 1, -1.0281558)
+
+[node name="RigidBody3D8" parent="." unique_id=1326589332 instance=ExtResource("2_woxqt")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 5.1928234, 1, -1.0153637)
+
+[node name="RigidBody3D9" parent="." unique_id=617646038 instance=ExtResource("2_woxqt")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 3.7644153, 1, -1.0018258)
+
+[node name="RigidBody3D10" parent="." unique_id=1362699698 instance=ExtResource("2_woxqt")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4.455127, 2.3294854, -1.0069313)
+
+[node name="RigidBody3D11" parent="." unique_id=179524928 instance=ExtResource("2_woxqt")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 5.4444566, 2.3294854, -1.0203838)
+
+[node name="RigidBody3D12" parent="." unique_id=419464173 instance=ExtResource("2_woxqt")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 5.0177236, 3.5920696, -1.0137043)
+
+[node name="RigidBody3D13" parent="." unique_id=1919015938 instance=ExtResource("2_woxqt")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3.5999117, 1, -1.0281558)
+
+[node name="RigidBody3D14" parent="." unique_id=838580989 instance=ExtResource("2_woxqt")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -4.9496593, 1, -1.0153637)
+
+[node name="RigidBody3D15" parent="." unique_id=198650818 instance=ExtResource("2_woxqt")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -6.3780675, 1, -1.0018258)
+
+[node name="RigidBody3D16" parent="." unique_id=81376024 instance=ExtResource("2_woxqt")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -5.552213, 2.3294854, -1.0069313)
+
+[node name="RigidBody3D17" parent="." unique_id=1367428056 instance=ExtResource("2_woxqt")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -4.541007, 2.3294854, -1.0203838)
+
+[node name="RigidBody3D18" parent="." unique_id=1016398069 instance=ExtResource("2_woxqt")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -5.124759, 3.5920696, -1.0137043)

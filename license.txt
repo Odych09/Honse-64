@@ -1,0 +1,11 @@
+Model Information:
+* title:	Marble Run Track
+* source:	https://sketchfab.com/3d-models/marble-run-track-d9e49b6dc9e148ab9eb0dc4ae0476d9b
+* author:	sysrpl (https://sketchfab.com/sysrpl)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Marble Run Track" (https://sketchfab.com/3d-models/marble-run-track-d9e49b6dc9e148ab9eb0dc4ae0476d9b) by sysrpl (https://sketchfab.com/sysrpl) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

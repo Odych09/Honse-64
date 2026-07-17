@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://cc8or8pmulknw"]
+
+[ext_resource type="Texture2D" uid="uid://dfdsumgexrbef" path="res://kenney_prototype-textures/PNG/Dark/texture_07.png" id="1_jpf1b"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ykoex"]
+albedo_texture = ExtResource("1_jpf1b")
+uv1_triplanar = true
+
+[sub_resource type="BoxMesh" id="BoxMesh_jpf1b"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ykoex"]
+size = Vector3(20, 1, 60)
+
+[node name="TrackChunk" type="Node3D" unique_id=997381155]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1002286450]
+
+[node name="CSGBox3D" type="MeshInstance3D" parent="StaticBody3D" unique_id=1689466506]
+transform = Transform3D(20, 0, 0, 0, 1, 0, 0, 0, 60, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_ykoex")
+mesh = SubResource("BoxMesh_jpf1b")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=595297862]
+shape = SubResource("BoxShape3D_ykoex")

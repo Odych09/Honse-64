@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://fvt56jtfb6i"]
+
+[ext_resource type="Texture2D" uid="uid://bwwc4d6g72l5l" path="res://kenney_prototype-textures/PNG/Red/texture_09.png" id="1_g2tbl"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_oq5cr"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bqn3j"]
+albedo_texture = ExtResource("1_g2tbl")
+
+[sub_resource type="BoxMesh" id="BoxMesh_3n43a"]
+
+[node name="RigidBody3D" type="RigidBody3D" unique_id=1058976817]
+collision_layer = 3
+collision_mask = 3
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1079111912]
+shape = SubResource("BoxShape3D_oq5cr")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=63919924]
+material_override = SubResource("StandardMaterial3D_bqn3j")
+mesh = SubResource("BoxMesh_3n43a")

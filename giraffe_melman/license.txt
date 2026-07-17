@@ -1,0 +1,11 @@
+Model Information:
+* title:	Giraffe_melman
+* source:	https://sketchfab.com/3d-models/giraffe-melman-87c19019a60f4e319cdc127d30b24d9a
+* author:	Xuan Tien (https://sketchfab.com/xuan.tien2111hy)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Giraffe_melman" (https://sketchfab.com/3d-models/giraffe-melman-87c19019a60f4e319cdc127d30b24d9a) by Xuan Tien (https://sketchfab.com/xuan.tien2111hy) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

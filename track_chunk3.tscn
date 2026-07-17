@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://d4muw0wv6hqp1"]
+
+[ext_resource type="Texture2D" uid="uid://dfdsumgexrbef" path="res://kenney_prototype-textures/PNG/Dark/texture_07.png" id="1_vdahm"]
+[ext_resource type="Texture2D" uid="uid://dulk07ipq02ch" path="res://kenney_prototype-textures/PNG/Green/texture_02.png" id="2_ern5l"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ykoex"]
+albedo_texture = ExtResource("1_vdahm")
+uv1_triplanar = true
+
+[sub_resource type="BoxMesh" id="BoxMesh_jpf1b"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ykoex"]
+size = Vector3(20, 1, 60)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ru6pr"]
+albedo_texture = ExtResource("2_ern5l")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_22l27"]
+albedo_texture = ExtResource("2_ern5l")
+
+[node name="TrackChunk" type="Node3D" unique_id=997381155]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1002286450]
+
+[node name="CSGBox3D" type="MeshInstance3D" parent="StaticBody3D" unique_id=1689466506]
+transform = Transform3D(20, 0, 0, 0, 1, 0, 0, 0, 60, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_ykoex")
+mesh = SubResource("BoxMesh_jpf1b")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=595297862]
+shape = SubResource("BoxShape3D_ykoex")
+
+[node name="CSGPolygon3D" type="CSGPolygon3D" parent="." unique_id=1855365710]
+transform = Transform3D(0.046085894, 0.0016952372, -6.8591223, 0.043778766, 1.31573, 0.015231301, 1.4706498, -0.03922019, 0.21449153, 3.0714903, -0.33932614, 10.900585)
+material_override = SubResource("StandardMaterial3D_ru6pr")
+use_collision = true
+polygon = PackedVector2Array(-7.1726127, 0.77087057, -7.1282682, 4.470588, 1.0047498, 0.0015666485, 1, 0)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=826255470]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.6985307, 3.9844642, 0.8467455)
+material_override = SubResource("StandardMaterial3D_22l27")
+use_collision = true
+size = Vector3(13.229004, 8.900879, 1)

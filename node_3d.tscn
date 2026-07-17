@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://chyrk8wfggep8"]
+
+[ext_resource type="PackedScene" uid="uid://dm7dybcaarkdi" path="res://player.tscn" id="21_pf4ct"]
+[ext_resource type="Shader" uid="uid://di67jrtvrg3a4" path="res://sky.gdshader" id="22_s0gvp"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vxd74"]
+shader = ExtResource("22_s0gvp")
+shader_parameter/sky_color = Color(0.2, 0.5, 0.9, 1)
+shader_parameter/horizon_color = Color(0.5, 0.8, 1, 1)
+shader_parameter/horizon_blur = 0.1
+shader_parameter/sun_color = Color(1, 1, 0.8, 1)
+shader_parameter/sun_size = 0.05
+shader_parameter/sun_blur = 0.01
+shader_parameter/cloud_color = Color(1, 1, 1, 1)
+shader_parameter/cloud_edge_sharpness = 0.1
+shader_parameter/cloud_scale = 2.0
+shader_parameter/cloud_speed = 0.02
+
+[sub_resource type="Sky" id="Sky_jn4p2"]
+sky_material = SubResource("ShaderMaterial_vxd74")
+
+[sub_resource type="Environment" id="Environment_dhlwf"]
+background_mode = 2
+sky = SubResource("Sky_jn4p2")
+tonemap_mode = 2
+glow_enabled = true
+
+[node name="Node3D" type="Node3D" unique_id=1488916023]
+
+[node name="player" parent="." unique_id=261263218 instance=ExtResource("21_pf4ct")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.659503, 58.127937, 83.92631)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1883899284]
+environment = SubResource("Environment_dhlwf")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=192574072]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+shadow_enabled = true

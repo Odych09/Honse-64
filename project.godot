@@ -8,11 +8,15 @@
 
 config_version=5
 
+[animation]
+
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
+
 [application]
 
 config/name="HONSE 64"
 run/main_scene="uid://cwiampmgdv0mc"
-config/features=PackedStringArray("4.5", "Mobile")
+config/features=PackedStringArray("4.7", "Mobile")
 config/icon="res://icon.svg"
 
 [autoload]
@@ -26,6 +30,16 @@ window/size/mode=3
 [editor_plugins]
 
 enabled=PackedStringArray()
+
+[file_customization]
+
+folder_colors={
+"res://Main Menu/": "orange",
+"res://Scenes/": "green",
+"res://Transition Manager/": "blue",
+"res://World Objects/": "yellow",
+"res://World Objects/Honse/": "red"
+}
 
 [global_group]
 

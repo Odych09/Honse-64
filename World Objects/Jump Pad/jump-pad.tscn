@@ -1,16 +1,16 @@
-[gd_scene format=3 uid="uid://m085cbu82nuv"]
+[gd_scene format=3 uid="uid://8i5b1w7ae5ls"]
 
-[ext_resource type="Texture2D" uid="uid://d0ocavfxcqqqt" path="res://kenney_prototype-textures/PNG/Orange/texture_05.png" id="1_hnf4g"]
-[ext_resource type="Script" uid="uid://k142wtxk62lp" path="res://boost.gd" id="1_n25d2"]
+[ext_resource type="Script" uid="uid://b05xot1cp1fx1" path="res://World Objects/Jump Pad/jump_pad.gd" id="1_8wcdu"]
+[ext_resource type="Texture2D" uid="uid://d0ocavfxcqqqt" path="res://kenney_prototype-textures/PNG/Orange/texture_05.png" id="2_uqe3h"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n25d2"]
-albedo_texture = ExtResource("1_hnf4g")
+albedo_texture = ExtResource("2_uqe3h")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0koi6"]
 albedo_color = Color(8.064605, 4.2013597, 1.4850162, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_0koi6"]
-size = Vector3(1.767456, 1, 2.5457764)
+size = Vector3(1.372055, 0.95910645, 1.6542931)
 
 [sub_resource type="Curve" id="Curve_n25d2"]
 _data = [Vector2(0.020270273, 0.37078655), 0.0, 0.0, 0, 0, Vector2(0.9797298, 0), 0.0, 0.0, 0, 0]
@@ -20,12 +20,10 @@ point_count = 2
 curve = SubResource("Curve_n25d2")
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_s3qq1"]
-angle_min = -565.1
-angle_max = -131.59999
+angle_min = -720.0
+angle_max = -286.5
 inherit_velocity_ratio = 0.071
-velocity_pivot = Vector3(0, 3, 0)
-direction = Vector3(-1, 0, -4)
-spread = 44.471
+spread = 180.0
 initial_velocity_min = 21.5
 initial_velocity_max = 21.5
 gravity = Vector3(0, 0.3, 0)
@@ -38,13 +36,13 @@ albedo_color = Color(13.539555, 13.539555, 0, 1)
 [sub_resource type="SphereMesh" id="SphereMesh_pje8n"]
 material = SubResource("StandardMaterial3D_1hec5")
 
-[node name="boost" type="Node3D" unique_id=768820259]
-script = ExtResource("1_n25d2")
+[node name="jump_pad" type="Node3D" unique_id=768820259]
+script = ExtResource("1_8wcdu")
 
 [node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=675278978]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.37799072, -0.44384766, 0.7709961)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.37660217, -0.44384766, 0.9747925)
 material_override = SubResource("StandardMaterial3D_n25d2")
-size = Vector3(1.7559814, 0.11230469, 2.5419922)
+size = Vector3(1.3624573, 0.11230469, 1.637085)
 
 [node name="CSGPolygon3D" type="CSGPolygon3D" parent="." unique_id=1356108882]
 transform = Transform3D(-0.9937792, 0.9028962, -1.4677949e-10, 0, -5.5814553e-08, -0.004748821, -0.9937792, -0.9028962, 1.4677949e-10, 0.4556448, -0.36424047, 1.8931931)
@@ -52,14 +50,14 @@ material_override = SubResource("StandardMaterial3D_0koi6")
 polygon = PackedVector2Array(0.11711885, 0.109746575, 0.21074317, 0.7623447, 0.75236994, 0.157902)
 
 [node name="CSGPolygon3D2" type="CSGPolygon3D" parent="." unique_id=1192342216]
-transform = Transform3D(-0.9937792, 0.9028962, -1.4677949e-10, 0, -5.5814553e-08, -0.004748821, -0.9937792, -0.9028962, 1.4677949e-10, 0.4556448, -0.36424047, 0.88038194)
+transform = Transform3D(0.9850691, -0.91074103, 1.4805479e-10, 0, -5.5814553e-08, -0.004748821, 1.0024136, 0.8949827, -1.4549303e-10, 0.34211636, -0.36424047, 0.116128325)
 material_override = SubResource("StandardMaterial3D_0koi6")
 polygon = PackedVector2Array(0.11711885, 0.109746575, 0.21074317, 0.7623447, 0.75236994, 0.157902)
 
-[node name="maw" type="Area3D" parent="." unique_id=1050014881]
+[node name="Area3D" type="Area3D" parent="." unique_id=1050014881]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="maw" unique_id=1361943980]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.38372803, 0, 0.7728882)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1361943980]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.37833405, -0.020446777, 0.97356606)
 shape = SubResource("BoxShape3D_0koi6")
 
 [node name="GPUParticles3D" type="GPUParticles3D" parent="." unique_id=1473611253]
@@ -73,4 +71,4 @@ randomness = 1.0
 process_material = SubResource("ParticleProcessMaterial_s3qq1")
 draw_pass_1 = SubResource("SphereMesh_pje8n")
 
-[connection signal="body_entered" from="maw" to="." method="_on_maw_body_entered"]
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

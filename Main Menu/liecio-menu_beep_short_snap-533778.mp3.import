@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://030qwfm8o1cm"
+path="res://.godot/imported/liecio-menu_beep_short_snap-533778.mp3-a54139ae65dd3f67decfc72c698f4223.mp3str"
+
+[deps]
+
+source_file="res://Main Menu/liecio-menu_beep_short_snap-533778.mp3"
+dest_files=["res://.godot/imported/liecio-menu_beep_short_snap-533778.mp3-a54139ae65dd3f67decfc72c698f4223.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

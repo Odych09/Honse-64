@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b2ems3ph8sj43"]
 
 [ext_resource type="Texture2D" uid="uid://dfdsumgexrbef" path="res://kenney_prototype-textures/PNG/Dark/texture_07.png" id="1_kap1y"]
-[ext_resource type="PackedScene" uid="uid://fvt56jtfb6i" path="res://box.tscn" id="2_woxqt"]
+[ext_resource type="PackedScene" uid="uid://fvt56jtfb6i" path="res://World Objects/box.tscn" id="2_woxqt"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ykoex"]
 albedo_texture = ExtResource("1_kap1y")

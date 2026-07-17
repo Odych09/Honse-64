@@ -1,12 +1,12 @@
 [gd_scene format=4 uid="uid://dm7dybcaarkdi"]
 
 [ext_resource type="Texture2D" uid="uid://3ipcrk2l3yd8" path="res://kenney_prototype-textures/PNG/Orange/texture_04.png" id="1_4flbx"]
-[ext_resource type="Script" uid="uid://dvge5jvveyf7d" path="res://player.gd" id="1_i3pqv"]
+[ext_resource type="Script" uid="uid://dvge5jvveyf7d" path="res://World Objects/Honse/player.gd" id="1_i3pqv"]
 [ext_resource type="Script" uid="uid://p25hi268stfe" path="res://node_3d.gd" id="3_hqtel"]
 [ext_resource type="Shader" uid="uid://01fcchmu8k1i" path="res://visual.gdshader" id="4_hqtel"]
 [ext_resource type="FontFile" uid="uid://c4on7qyb2p32e" path="res://SuperMario256.ttf" id="4_sweqy"]
 [ext_resource type="PackedScene" path="res://funny_horse/scene.gltf" id="6_2hs0m"]
-[ext_resource type="Texture2D" uid="uid://0wvjmp2g00ui" path="res://honse.png" id="7_1jxqw"]
+[ext_resource type="Texture2D" uid="uid://0wvjmp2g00ui" path="res://World Objects/Honse/honse.png" id="7_1jxqw"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_onrkg"]
 albedo_texture = ExtResource("1_4flbx")

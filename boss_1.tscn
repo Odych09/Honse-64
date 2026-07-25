@@ -2,7 +2,7 @@
 
 [ext_resource type="Shader" uid="uid://di67jrtvrg3a4" path="res://sky.gdshader" id="1_2nlvs"]
 [ext_resource type="Texture2D" uid="uid://cfifbiovwj7dt" path="res://colour_palette.png" id="2_y66il"]
-[ext_resource type="PackedScene" uid="uid://dm7dybcaarkdi" path="res://player.tscn" id="3_p7pij"]
+[ext_resource type="PackedScene" uid="uid://dm7dybcaarkdi" path="res://World Objects/Honse/player.tscn" id="3_p7pij"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_p7pij"]
 shader = ExtResource("1_2nlvs")

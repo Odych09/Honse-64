@@ -1,17 +1,17 @@
 [gd_scene format=4 uid="uid://bmke46w03tk0j"]
 
-[ext_resource type="PackedScene" uid="uid://dm7dybcaarkdi" path="res://player.tscn" id="3_272bh"]
-[ext_resource type="Texture2D" uid="uid://dfdsumgexrbef" path="res://kenney_prototype-textures/PNG/Dark/texture_07.png" id="4_1bvp3"]
-[ext_resource type="Shader" uid="uid://di67jrtvrg3a4" path="res://sky.gdshader" id="4_5vw27"]
-[ext_resource type="AudioStream" uid="uid://5xqrwli2nbcx" path="res://psychronic-winning-the-race-21326.mp3" id="5_kek77"]
-[ext_resource type="Texture2D" uid="uid://bh7r6m5ys73et" path="res://red_brick_1k.gltf/textures/red_brick_diff_1k.jpg" id="5_lquwl"]
-[ext_resource type="Texture2D" uid="uid://bmmmp8aimru7p" path="res://red_brick_1k.gltf/textures/red_brick_nor_gl_1k.jpg" id="6_272bh"]
-[ext_resource type="Texture2D" uid="uid://da183qu1xcg6t" path="res://red_brick_1k.gltf/textures/red_brick_arm_1k.jpg" id="7_5vw27"]
-[ext_resource type="Texture2D" uid="uid://cfifbiovwj7dt" path="res://colour_palette.png" id="8_5vw27"]
-[ext_resource type="PackedScene" uid="uid://b1sitym2r800n" path="res://kenney_car-kit/Models/GLB format/hatchback-sports.glb" id="9_kek77"]
+[ext_resource type="Shader" uid="uid://di67jrtvrg3a4" path="res://sky.gdshader" id="1_ynf5e"]
+[ext_resource type="AudioStream" uid="uid://5xqrwli2nbcx" path="res://psychronic-winning-the-race-21326.mp3" id="2_hptm8"]
+[ext_resource type="PackedScene" uid="uid://dm7dybcaarkdi" path="res://World Objects/Honse/player.tscn" id="3_d1ilt"]
+[ext_resource type="Texture2D" uid="uid://dfdsumgexrbef" path="res://kenney_prototype-textures/PNG/Dark/texture_07.png" id="4_6iyac"]
+[ext_resource type="Texture2D" uid="uid://bh7r6m5ys73et" path="res://red_brick_1k.gltf/textures/red_brick_diff_1k.jpg" id="5_fdnlq"]
+[ext_resource type="Texture2D" uid="uid://bmmmp8aimru7p" path="res://red_brick_1k.gltf/textures/red_brick_nor_gl_1k.jpg" id="6_jkdf5"]
+[ext_resource type="Texture2D" uid="uid://da183qu1xcg6t" path="res://red_brick_1k.gltf/textures/red_brick_arm_1k.jpg" id="7_wsu2k"]
+[ext_resource type="Texture2D" uid="uid://cfifbiovwj7dt" path="res://colour_palette.png" id="8_k12tt"]
+[ext_resource type="PackedScene" uid="uid://b1sitym2r800n" path="res://kenney_car-kit/Models/GLB format/hatchback-sports.glb" id="9_h1bgf"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_4c57u"]
-shader = ExtResource("4_5vw27")
+shader = ExtResource("1_ynf5e")
 shader_parameter/sky_color = Color(0.2, 0.5, 0.9, 1)
 shader_parameter/horizon_color = Color(0.5, 0.8, 1, 1)
 shader_parameter/horizon_blur = 0.1
@@ -45,15 +45,15 @@ material = SubResource("StandardMaterial3D_boi4p")
 radial_segments = 4
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1bvp3"]
-albedo_texture = ExtResource("4_1bvp3")
+albedo_texture = ExtResource("4_6iyac")
 uv1_triplanar = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7mycd"]
-albedo_texture = ExtResource("5_lquwl")
-roughness_texture = ExtResource("7_5vw27")
+albedo_texture = ExtResource("5_fdnlq")
+roughness_texture = ExtResource("7_wsu2k")
 normal_enabled = true
 normal_scale = 7.6
-normal_texture = ExtResource("6_272bh")
+normal_texture = ExtResource("6_jkdf5")
 uv1_scale = Vector3(0.2, 0.2, 0.2)
 uv1_triplanar = true
 
@@ -64,7 +64,7 @@ albedo_color = Color(0.8711438, 0.62782794, 0.59151214, 1)
 albedo_color = Color(0.48936915, 1.3262677, 1.3262677, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kek77"]
-albedo_texture = ExtResource("8_5vw27")
+albedo_texture = ExtResource("8_k12tt")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6kyfu"]
 resource_name = "Material.002"
@@ -207,7 +207,7 @@ transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545
 shadow_enabled = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=996305979]
-stream = ExtResource("5_kek77")
+stream = ExtResource("2_hptm8")
 autoplay = true
 parameters/looping = true
 
@@ -220,7 +220,7 @@ randomness = 1.0
 process_material = SubResource("ParticleProcessMaterial_h2yge")
 draw_pass_1 = SubResource("SphereMesh_1bvp3")
 
-[node name="player" parent="." unique_id=261263218 instance=ExtResource("3_272bh")]
+[node name="player" parent="." unique_id=261263218 instance=ExtResource("3_d1ilt")]
 transform = Transform3D(-0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, -0.70710677, 125.18127, 1, -9.835823)
 
 [node name="RemoteTransform3D" parent="player" index="3" unique_id=394020513]
@@ -575,7 +575,7 @@ shape = SubResource("BoxShape3D_5vw27")
 
 [node name="CAR" type="StaticBody3D" parent="." unique_id=977039832]
 
-[node name="hatchback-sports" parent="CAR" unique_id=2001377721 instance=ExtResource("9_kek77")]
+[node name="hatchback-sports" parent="CAR" unique_id=2001377721 instance=ExtResource("9_h1bgf")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 111.54839, -0.33720207, -5.0009604)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CAR" unique_id=857757060]
@@ -585,7 +585,7 @@ shape = SubResource("BoxShape3D_kek77")
 [node name="CAR2" type="StaticBody3D" parent="." unique_id=506686126]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.7741394, 0, 0)
 
-[node name="hatchback-sports" parent="CAR2" unique_id=355654296 instance=ExtResource("9_kek77")]
+[node name="hatchback-sports" parent="CAR2" unique_id=355654296 instance=ExtResource("9_h1bgf")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 111.54839, -0.33720207, -5.0009604)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CAR2" unique_id=766513046]
@@ -595,7 +595,7 @@ shape = SubResource("BoxShape3D_kek77")
 [node name="CAR3" type="StaticBody3D" parent="." unique_id=167684763]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.351761, 0, 0)
 
-[node name="hatchback-sports" parent="CAR3" unique_id=156435955 instance=ExtResource("9_kek77")]
+[node name="hatchback-sports" parent="CAR3" unique_id=156435955 instance=ExtResource("9_h1bgf")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 111.54839, -0.33720207, -5.0009604)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CAR3" unique_id=954257230]
@@ -605,7 +605,7 @@ shape = SubResource("BoxShape3D_kek77")
 [node name="CAR4" type="StaticBody3D" parent="." unique_id=1742914666]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.459343, 0, 0)
 
-[node name="hatchback-sports" parent="CAR4" unique_id=608967807 instance=ExtResource("9_kek77")]
+[node name="hatchback-sports" parent="CAR4" unique_id=608967807 instance=ExtResource("9_h1bgf")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 111.54839, -0.33720207, -5.0009604)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CAR4" unique_id=787670350]
@@ -615,7 +615,7 @@ shape = SubResource("BoxShape3D_kek77")
 [node name="CAR5" type="StaticBody3D" parent="." unique_id=123240538]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.404697, 0, 0)
 
-[node name="hatchback-sports" parent="CAR5" unique_id=926995353 instance=ExtResource("9_kek77")]
+[node name="hatchback-sports" parent="CAR5" unique_id=926995353 instance=ExtResource("9_h1bgf")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 111.54839, -0.33720207, -5.0009604)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CAR5" unique_id=558297388]
@@ -625,7 +625,7 @@ shape = SubResource("BoxShape3D_kek77")
 [node name="CAR6" type="StaticBody3D" parent="." unique_id=1458328553]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.41006, 0, 0)
 
-[node name="hatchback-sports" parent="CAR6" unique_id=791542093 instance=ExtResource("9_kek77")]
+[node name="hatchback-sports" parent="CAR6" unique_id=791542093 instance=ExtResource("9_h1bgf")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 111.54839, -0.33720207, -5.0009604)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CAR6" unique_id=69924353]
@@ -635,7 +635,7 @@ shape = SubResource("BoxShape3D_kek77")
 [node name="CAR7" type="StaticBody3D" parent="." unique_id=509030278]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.758236, 0, 0)
 
-[node name="hatchback-sports" parent="CAR7" unique_id=254848882 instance=ExtResource("9_kek77")]
+[node name="hatchback-sports" parent="CAR7" unique_id=254848882 instance=ExtResource("9_h1bgf")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 111.54839, -0.33720207, -5.0009604)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CAR7" unique_id=506731301]
@@ -645,7 +645,7 @@ shape = SubResource("BoxShape3D_kek77")
 [node name="CAR8" type="StaticBody3D" parent="." unique_id=826361127]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47.64008, 0, 0)
 
-[node name="hatchback-sports" parent="CAR8" unique_id=964170082 instance=ExtResource("9_kek77")]
+[node name="hatchback-sports" parent="CAR8" unique_id=964170082 instance=ExtResource("9_h1bgf")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 111.54839, -0.33720207, -5.0009604)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CAR8" unique_id=429032550]

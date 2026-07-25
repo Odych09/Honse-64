@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://chyrk8wfggep8"]
 
-[ext_resource type="PackedScene" uid="uid://dm7dybcaarkdi" path="res://player.tscn" id="21_pf4ct"]
+[ext_resource type="PackedScene" uid="uid://dm7dybcaarkdi" path="res://World Objects/Honse/player.tscn" id="21_pf4ct"]
 [ext_resource type="Shader" uid="uid://di67jrtvrg3a4" path="res://sky.gdshader" id="22_s0gvp"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_vxd74"]

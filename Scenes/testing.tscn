@@ -2,14 +2,14 @@
 
 [ext_resource type="Shader" uid="uid://di67jrtvrg3a4" path="res://sky.gdshader" id="1_lc7k4"]
 [ext_resource type="Texture2D" uid="uid://dfdsumgexrbef" path="res://kenney_prototype-textures/PNG/Dark/texture_07.png" id="1_qrja6"]
-[ext_resource type="PackedScene" uid="uid://dm7dybcaarkdi" path="res://player.tscn" id="2_co24e"]
+[ext_resource type="PackedScene" uid="uid://dm7dybcaarkdi" path="res://World Objects/Honse/player.tscn" id="2_co24e"]
 [ext_resource type="Texture2D" uid="uid://dulk07ipq02ch" path="res://kenney_prototype-textures/PNG/Green/texture_02.png" id="3_feb8i"]
-[ext_resource type="PackedScene" uid="uid://fvt56jtfb6i" path="res://box.tscn" id="4_kj3p2"]
+[ext_resource type="PackedScene" uid="uid://fvt56jtfb6i" path="res://World Objects/box.tscn" id="4_kj3p2"]
 [ext_resource type="Texture2D" uid="uid://bn50tkdq1ysgq" path="res://kenney_prototype-textures/PNG/Purple/texture_06.png" id="7_ybq6y"]
-[ext_resource type="PackedScene" uid="uid://m085cbu82nuv" path="res://boost.tscn" id="8_11ixh"]
+[ext_resource type="PackedScene" uid="uid://m085cbu82nuv" path="res://World Objects/Boost/boost.tscn" id="8_11ixh"]
 [ext_resource type="Texture2D" uid="uid://cfifbiovwj7dt" path="res://colour_palette.png" id="10_20t1u"]
 [ext_resource type="PackedScene" uid="uid://b3dk1ivuv3038" path="res://giraffe_melman/scene.gltf" id="10_boi4p"]
-[ext_resource type="PackedScene" uid="uid://8i5b1w7ae5ls" path="res://jump-pad.tscn" id="10_fd6ls"]
+[ext_resource type="PackedScene" uid="uid://8i5b1w7ae5ls" path="res://World Objects/Jump Pad/jump-pad.tscn" id="10_fd6ls"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_w078t"]
 shader = ExtResource("1_lc7k4")

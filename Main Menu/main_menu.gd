@@ -13,4 +13,4 @@ func _on_button_3_pressed() -> void:
 
 
 func _on_button_pressed() -> void:
-	TransitionManager.change_scene_with_transition("res://testing.tscn")
+	TransitionManager.change_scene_with_transition("res://Scenes/testing.tscn")
